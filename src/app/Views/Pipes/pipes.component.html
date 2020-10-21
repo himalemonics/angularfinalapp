@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="bsRes">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>{{title}} Page :: The Shiv Sena, the Nationalist Congress Party (NCP) and the Congress have been working on a prospective coalition.</h1>
+                
+                <p>The Shiv Sena, the Nationalist Congress Party (NCP) and the Congress have been working on a prospective coalition. Maharashtra is currently under President's Rule, which was imposed earlier this month after the two parties that won the state election together -- the Sena and the BJP -- disagreed on a key issue and so couldn't form a government together. Stay tuned to this live blog for the latest updates from Maharashtra.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <div>
+                    <h4>Strings ::</h4>
+                    <p>TechList : {{techList}}</p>
+                    <p>TechList : {{techList[2] | lowercase}}</p>
+                    <p>TechList : {{techList[0] | uppercase}}</p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div>
+                    <h4>Strings ::</h4>
+                    <p>strLine : {{strLine}}</p>
+                    <p>strLine : {{strLine | capitalize}}</p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div>
+                    <h4>Dates ::</h4>
+                    <p>Date : {{date}}</p>
+                    <p>Date : {{date | date: 'mediumDate'}}</p>
+                    <p>Date : {{date | date: 'dd/MMM/yyyy'}}</p>
+                    <p>Date : {{date | date: 'shortTime'}}</p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div>
+                    <h4>Numbers ::</h4>
+                    <p>Rating : {{rating}}</p>
+                    <p>Grading : {{grading}}</p>
+                    <p>Rating : {{rating | percent: '.3'}}</p>
+                    <p>Grading : {{grading | number: '3.1-3'}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

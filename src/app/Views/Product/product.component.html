@@ -1,0 +1,24 @@
+<div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card product">
+                    <div class="card-body">
+                        <h4>Product Change Log</h4>
+                        <div *ngFor = "let changeLog of allProductChangeLogs">
+                            {{changeLog}}
+                        </div>
+                    </div>
+                </div>
+            <div class="col-sm-6">
+                <div class="card message">
+                    <div class="card-body">
+                        <h4>Message Change Log</h4>
+                        <div *ngFor = "let changeLog of allMsgChangeLogs">
+                            {{changeLog}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

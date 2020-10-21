@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="bsRes">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="content"><span>{{title}} app is running!</span></h1>
+                
+                <p>The Shiv Sena, the Nationalist Congress Party (NCP) and the Congress have been working on a prospective coalition. Maharashtra is currently under President's Rule, which was imposed earlier this month after the two parties that won the state election together -- the Sena and the BJP -- disagreed on a key issue and so couldn't form a government together. Stay tuned to this live blog for the latest updates from Maharashtra.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <app-product [product] = "product" [message] = "msg"></app-product>
+            </div>
+        </div>
+        
+        <hr />
+        
+        <div class="row">
+            <div class="col-xs-8 col-sm-3 col-md-9 col-lg-5 col-xl-6">
+                <form #productForm = "ngForm" (ngSubmit) = "onFormSubmit(productForm)">
+                    <fieldset class="form-group">
+                        <label for = "productname">Product Name</label>
+                        <input type = "text" name="name" [ngModel] = "product.name" class="form-control" />
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for = "productprice">Product Price</label>
+                        <input type = "text" name="price" [ngModel] = "product.price" class="form-control" />
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <button type="submit" class="btn btn-primary">submit</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="col-xs-4 col-sm-9 col-md-3 col-lg-7 col-xl-6">
+                <div class="card card-body">
+                    <p>Message : <input type = "text" [(ngModel)] = "msg" class="form-control" /></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
